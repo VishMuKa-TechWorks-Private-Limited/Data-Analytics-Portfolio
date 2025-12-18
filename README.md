@@ -1,3 +1,12 @@
+<img width="825" height="438" alt="new-logo-TM" src="https://github.com/user-attachments/assets/7ecfc4ef-44a5-4426-ae86-8f0d8c9394a6" />
+
+
+
+
+
+
+
+
 ✨ **VishMuka TechWorks Private Limited** ✨
 
 ---
@@ -35,8 +44,4 @@ Beyond exceptional application development, we are masters of **complete data op
 
 📧 **Email**: info@vishmuka.in
 📍 **Address**: Plot No. 85/2RT, Street Number 1, Lane Number 3,
-   S R Nagar, Hyderabad – 500038, Telangana, India
-
-📧 Email: info@vishmuka.in
-📍 Address: Plot No. 85/2RT, Street Number 1, Lane Number 3,
    S R Nagar, Hyderabad – 500038, Telangana, India
