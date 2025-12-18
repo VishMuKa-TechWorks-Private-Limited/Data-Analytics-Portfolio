@@ -1,0 +1,18 @@
+# Screenshot Placeholder
+
+This directory contains dashboard screenshots.
+
+To complete this portfolio:
+1. Create your Power BI dashboard using the sample data provided
+2. Take high-quality screenshots of each dashboard page
+3. Save them with the following names:
+   - dashboard-overview.png (main view)
+   - executive-summary.png (executive KPIs)
+   - sales-analysis.png (detailed sales)
+   - customer-analytics.png (customer insights)
+   - product-performance.png (product metrics)
+
+Recommended screenshot settings:
+- Resolution: 1920x1080 or higher
+- Format: PNG for clarity
+- Include all relevant visuals and filters

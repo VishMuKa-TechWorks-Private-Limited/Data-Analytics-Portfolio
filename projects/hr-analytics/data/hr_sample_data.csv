@@ -1,0 +1,21 @@
+EmployeeID,Name,Age,Gender,Department,JobRole,HireDate,Status,Salary,PerformanceRating,JobSatisfaction,WorkLifeBalance,DistanceFromHome,OverTime,YearsSinceLastPromotion
+EMP001,Alice Johnson,35,Female,Sales,Sales Executive,2018-03-15,Active,65000,4,4,3,5,No,2
+EMP002,Bob Smith,42,Male,R&D,Research Scientist,2015-06-20,Active,85000,5,4,4,15,No,1
+EMP003,Carol White,28,Female,HR,HR Specialist,2020-01-10,Active,55000,3,3,2,8,Yes,3
+EMP004,David Brown,51,Male,Finance,Finance Manager,2012-09-05,Active,95000,4,5,4,3,No,2
+EMP005,Emma Davis,33,Female,Marketing,Marketing Analyst,2017-11-22,Terminated,62000,3,2,2,12,Yes,4
+EMP006,Frank Wilson,45,Male,Sales,Sales Manager,2014-04-18,Active,88000,5,4,3,7,No,3
+EMP007,Grace Lee,29,Female,R&D,Research Analyst,2019-08-30,Active,68000,4,5,4,4,No,1
+EMP008,Henry Martinez,38,Male,IT,IT Specialist,2016-02-14,Active,75000,4,4,3,10,Yes,2
+EMP009,Iris Garcia,26,Female,Sales,Sales Representative,2021-05-17,Terminated,48000,2,2,1,20,Yes,1
+EMP010,Jack Taylor,47,Male,Operations,Operations Manager,2013-07-28,Active,92000,5,5,4,6,No,2
+EMP011,Karen Anderson,31,Female,Finance,Financial Analyst,2018-10-12,Active,67000,4,4,4,9,No,3
+EMP012,Leo Thomas,36,Male,Marketing,Marketing Manager,2016-12-03,Active,82000,4,3,3,11,Yes,2
+EMP013,Mary Jackson,43,Female,HR,HR Manager,2014-08-25,Active,86000,5,5,5,5,No,1
+EMP014,Nathan White,29,Male,R&D,Junior Scientist,2020-03-09,Active,58000,3,4,3,15,No,2
+EMP015,Olivia Harris,34,Female,Sales,Sales Executive,2017-06-14,Active,66000,4,3,3,8,Yes,3
+EMP016,Paul Martin,40,Male,IT,IT Manager,2015-01-20,Active,94000,5,4,4,4,No,2
+EMP017,Quinn Thompson,27,Female,Marketing,Marketing Coordinator,2021-09-05,Active,52000,3,4,4,7,No,1
+EMP018,Robert Garcia,52,Male,Finance,Finance Director,2011-11-10,Active,115000,5,5,5,3,No,1
+EMP019,Sarah Rodriguez,30,Female,Operations,Operations Analyst,2019-04-22,Terminated,60000,3,2,2,18,Yes,2
+EMP020,Thomas Lee,37,Male,R&D,Senior Scientist,2016-07-08,Active,79000,4,4,3,12,No,2

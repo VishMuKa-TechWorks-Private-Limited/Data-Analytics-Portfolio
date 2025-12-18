@@ -1,0 +1,298 @@
+# Sales Analytics Dashboard - DAX Measures
+
+## Core Metrics
+
+### Total Revenue
+```dax
+Total Revenue = SUM(Sales[Revenue])
+```
+
+### Total Profit
+```dax
+Total Profit = SUM(Sales[Profit])
+```
+
+### Total Orders
+```dax
+Total Orders = COUNTROWS(Sales)
+```
+
+### Total Quantity
+```dax
+Total Quantity = SUM(Sales[Quantity])
+```
+
+### Total Customers
+```dax
+Total Customers = DISTINCTCOUNT(Sales[CustomerID])
+```
+
+## Financial Metrics
+
+### Profit Margin %
+```dax
+Profit Margin % = 
+DIVIDE(
+    [Total Profit],
+    [Total Revenue],
+    0
+) * 100
+```
+
+### Average Order Value
+```dax
+Average Order Value = 
+DIVIDE(
+    [Total Revenue],
+    [Total Orders],
+    0
+)
+```
+
+### Average Unit Price
+```dax
+Average Unit Price = 
+DIVIDE(
+    [Total Revenue],
+    [Total Quantity],
+    0
+)
+```
+
+## Time Intelligence
+
+### Revenue Previous Year
+```dax
+Revenue PY = 
+CALCULATE(
+    [Total Revenue],
+    SAMEPERIODLASTYEAR('Date'[Date])
+)
+```
+
+### Revenue Growth YoY
+```dax
+Revenue Growth YoY = 
+DIVIDE(
+    [Total Revenue] - [Revenue PY],
+    [Revenue PY],
+    0
+) * 100
+```
+
+### Revenue YTD
+```dax
+Revenue YTD = 
+TOTALYTD(
+    [Total Revenue],
+    'Date'[Date]
+)
+```
+
+### Revenue MTD
+```dax
+Revenue MTD = 
+TOTALMTD(
+    [Total Revenue],
+    'Date'[Date]
+)
+```
+
+### Running Total Revenue
+```dax
+Running Total Revenue = 
+CALCULATE(
+    [Total Revenue],
+    FILTER(
+        ALLSELECTED('Date'[Date]),
+        'Date'[Date] <= MAX('Date'[Date])
+    )
+)
+```
+
+## Customer Analytics
+
+### Customer Lifetime Value
+```dax
+Customer LTV = 
+AVERAGEX(
+    VALUES(Customer[CustomerID]),
+    CALCULATE([Total Revenue])
+)
+```
+
+### New Customers
+```dax
+New Customers = 
+CALCULATE(
+    DISTINCTCOUNT(Customer[CustomerID]),
+    Customer[Segment] = "New"
+)
+```
+
+### VIP Customers
+```dax
+VIP Customers = 
+CALCULATE(
+    DISTINCTCOUNT(Customer[CustomerID]),
+    Customer[Segment] = "VIP"
+)
+```
+
+### Average Revenue per Customer
+```dax
+Avg Revenue per Customer = 
+DIVIDE(
+    [Total Revenue],
+    [Total Customers],
+    0
+)
+```
+
+## Product Analytics
+
+### Top Product by Revenue
+```dax
+Top Product = 
+MAXX(
+    TOPN(1, VALUES(Product[ProductName]), [Total Revenue], DESC),
+    Product[ProductName]
+)
+```
+
+### Product Count
+```dax
+Product Count = DISTINCTCOUNT(Product[ProductID])
+```
+
+### Average Products per Order
+```dax
+Avg Products per Order = 
+DIVIDE(
+    [Total Quantity],
+    [Total Orders],
+    0
+)
+```
+
+## Regional Analytics
+
+### Top Region by Revenue
+```dax
+Top Region = 
+MAXX(
+    TOPN(1, VALUES(Sales[RegionID]), [Total Revenue], DESC),
+    Sales[RegionID]
+)
+```
+
+### Region Revenue %
+```dax
+Region Revenue % = 
+DIVIDE(
+    [Total Revenue],
+    CALCULATE([Total Revenue], ALL(Sales[RegionID])),
+    0
+) * 100
+```
+
+## Advanced Calculations
+
+### Sales Forecast (Simple Moving Average)
+```dax
+Sales Forecast = 
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Date'[Date], 1, MONTH)
+) * 1.05  // 5% growth assumption
+```
+
+### Revenue Target
+```dax
+Revenue Target = [Total Revenue] * 1.15  // 15% growth target
+```
+
+### Target Achievement %
+```dax
+Target Achievement % = 
+DIVIDE(
+    [Total Revenue],
+    [Revenue Target],
+    0
+) * 100
+```
+
+### Orders Above Average
+```dax
+Orders Above Avg = 
+CALCULATE(
+    [Total Orders],
+    FILTER(
+        Sales,
+        Sales[Revenue] > [Average Order Value]
+    )
+)
+```
+
+## Conditional Formatting Measures
+
+### Revenue Status
+```dax
+Revenue Status = 
+SWITCH(
+    TRUE(),
+    [Revenue Growth YoY] >= 20, "Excellent",
+    [Revenue Growth YoY] >= 10, "Good",
+    [Revenue Growth YoY] >= 0, "Average",
+    "Below Target"
+)
+```
+
+### Profit Margin Status
+```dax
+Margin Status = 
+IF(
+    [Profit Margin %] >= 25, "High",
+    IF([Profit Margin %] >= 15, "Medium", "Low")
+)
+```
+
+## Performance Indicators
+
+### Revenue vs Target Indicator
+```dax
+Revenue Indicator = 
+IF(
+    [Target Achievement %] >= 100,
+    "✓ Target Met",
+    "⚠ Below Target"
+)
+```
+
+### Growth Indicator
+```dax
+Growth Indicator = 
+IF(
+    [Revenue Growth YoY] > 0,
+    "↑ Growing",
+    "↓ Declining"
+)
+```
+
+---
+
+## Usage Notes
+
+- All percentage measures are formatted to show 2 decimal places
+- Currency measures use $ symbol
+- Use BLANK() instead of 0 for measures where zero might be misleading
+- All time intelligence functions require a proper Date table with contiguous dates
+- Consider using variables for complex calculations to improve performance
+
+## Data Model Requirements
+
+For these measures to work correctly:
+1. Create a proper Date dimension table
+2. Mark the Date table as a Date table in Power BI
+3. Ensure relationships are correctly established
+4. Set up proper data types for all columns

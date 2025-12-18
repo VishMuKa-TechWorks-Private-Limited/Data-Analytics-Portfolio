@@ -1,0 +1,44 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Power BI Files
+*.pbix~
+*.tmp
+
+# Temporary Files
+*.log
+*.tmp
+*.temp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# R
+.Rhistory
+.RData
+.Rproj.user
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls

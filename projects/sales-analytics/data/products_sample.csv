@@ -1,0 +1,13 @@
+ProductID,ProductName,Category,Subcategory,Brand,Cost,MSRP
+PROD501,Wireless Headphones,Electronics,Audio,TechBrand,100.00,149.99
+PROD502,Smartwatch Pro,Electronics,Wearables,SmartTech,180.00,299.99
+PROD503,USB-C Cable,Electronics,Accessories,GenericTech,30.00,49.99
+PROD504,Bluetooth Speaker,Electronics,Audio,SoundWave,120.00,199.99
+PROD505,Phone Case Premium,Electronics,Accessories,CaseMaster,45.00,79.99
+PROD506,Screen Protector,Electronics,Accessories,ProtectPlus,15.00,24.99
+PROD507,Laptop Stand,Electronics,Accessories,ErgoDesk,280.00,449.99
+PROD508,Mechanical Keyboard,Electronics,Peripherals,KeyTech,380.00,599.99
+PROD509,Mouse Pad,Electronics,Accessories,DeskMate,10.00,19.99
+PROD510,Webcam HD,Electronics,Peripherals,ViewTech,50.00,89.99
+PROD511,Power Bank,Electronics,Accessories,ChargeUp,50.00,39.99
+PROD512,Gaming Mouse,Electronics,Peripherals,GameTech,80.00,129.99

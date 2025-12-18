@@ -1,0 +1,17 @@
+CustomerID,CustomerName,Email,RegistrationDate,Segment,Country
+CUST1001,John Smith,john.smith@email.com,2022-06-15,VIP,USA
+CUST1002,Emma Johnson,emma.j@email.com,2023-01-20,Regular,UK
+CUST1003,Li Wei,li.wei@email.com,2023-05-10,Regular,China
+CUST1004,Maria Garcia,maria.g@email.com,2022-11-08,VIP,USA
+CUST1005,Pierre Dubois,pierre.d@email.com,2023-03-22,Regular,France
+CUST1006,Yuki Tanaka,yuki.t@email.com,2023-08-14,New,Japan
+CUST1007,Robert Brown,robert.b@email.com,2022-04-05,VIP,USA
+CUST1008,Anna Schmidt,anna.s@email.com,2023-06-30,Regular,Germany
+CUST1009,Raj Patel,raj.p@email.com,2023-09-18,New,India
+CUST1010,Sofia Rodriguez,sofia.r@email.com,2022-09-25,Regular,Spain
+CUST1011,Michael Chen,michael.c@email.com,2023-02-14,Regular,Singapore
+CUST1012,Sarah Wilson,sarah.w@email.com,2022-12-10,VIP,Canada
+CUST1013,Ahmed Hassan,ahmed.h@email.com,2023-07-05,New,UAE
+CUST1014,Laura Martin,laura.m@email.com,2022-08-20,Regular,USA
+CUST1015,Hans Mueller,hans.m@email.com,2023-04-16,Regular,Germany
+CUST1016,Priya Sharma,priya.s@email.com,2023-10-22,New,India

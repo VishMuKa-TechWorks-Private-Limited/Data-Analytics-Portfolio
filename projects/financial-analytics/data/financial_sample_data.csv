@@ -1,0 +1,21 @@
+TransactionID,Date,AccountID,AccountName,AccountType,Category,CostCenterID,BusinessUnitID,Amount
+TXN001,2024-01-15,4000,Product Sales,Revenue,Operating Revenue,CC001,BU001,125000
+TXN002,2024-01-15,5000,Cost of Goods Sold,Expense,Direct Costs,CC001,BU001,-72000
+TXN003,2024-01-20,4100,Service Revenue,Revenue,Operating Revenue,CC002,BU002,85000
+TXN004,2024-01-22,6000,Salaries & Wages,Expense,Operating Expenses,CC003,BU001,-45000
+TXN005,2024-01-25,6100,Rent Expense,Expense,Operating Expenses,CC003,BU001,-12000
+TXN006,2024-02-01,4000,Product Sales,Revenue,Operating Revenue,CC001,BU001,142000
+TXN007,2024-02-02,5000,Cost of Goods Sold,Expense,Direct Costs,CC001,BU001,-82000
+TXN008,2024-02-05,6200,Marketing Expense,Expense,Operating Expenses,CC004,BU001,-18000
+TXN009,2024-02-10,4100,Service Revenue,Revenue,Operating Revenue,CC002,BU002,92000
+TXN010,2024-02-15,6300,Utilities,Expense,Operating Expenses,CC003,BU001,-5500
+TXN011,2024-03-01,4000,Product Sales,Revenue,Operating Revenue,CC001,BU001,156000
+TXN012,2024-03-05,5000,Cost of Goods Sold,Expense,Direct Costs,CC001,BU001,-90000
+TXN013,2024-03-10,6000,Salaries & Wages,Expense,Operating Expenses,CC003,BU001,-45000
+TXN014,2024-03-15,4100,Service Revenue,Revenue,Operating Revenue,CC002,BU002,98000
+TXN015,2024-03-20,6400,Insurance,Expense,Operating Expenses,CC003,BU001,-8000
+TXN016,2024-04-01,4000,Product Sales,Revenue,Operating Revenue,CC001,BU001,148000
+TXN017,2024-04-05,5000,Cost of Goods Sold,Expense,Direct Costs,CC001,BU001,-85000
+TXN018,2024-04-10,6200,Marketing Expense,Expense,Operating Expenses,CC004,BU001,-22000
+TXN019,2024-04-15,4100,Service Revenue,Revenue,Operating Revenue,CC002,BU002,105000
+TXN020,2024-04-20,6500,Depreciation,Expense,Operating Expenses,CC003,BU001,-15000
